@@ -1,5 +1,5 @@
 import os
-import gmail
+# import gmail
 import openpyxl
 
 from main.models import *
@@ -111,7 +111,7 @@ def mail(request):
 
             for address in mails:
                 subject = themes[tag_number - 1] + company
-                gmail.send_mail(address, subject, message, tag_number)
+                # gmail.send_mail(address, subject, message, tag_number)
 
         if os.path.exists('table.xlsx'):
             os.remove('table.xlsx')
