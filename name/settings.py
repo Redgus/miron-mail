@@ -124,7 +124,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     # BASE_DIR / "static",
-    os.path.join(os.path.dirname(__file__) , 'static').replace('\\','/')
+    os.path.join(os.path.dirname(__file__) , 'static').replace('\\','/'),
     os.path.join(os.path.dirname(__file__) , '/').replace('\\','/')
     # '/var/www/static/',
 ]
